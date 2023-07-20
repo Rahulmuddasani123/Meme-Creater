@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Meme Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container mt-3 mb-3">
+        <div class="row ">
+
+            <div class="col-12">
+                <h1 class="title">MEME CREATER</h1>
+            </div>
+
+            <div class="col-12 col-lg-6  mt-4 mb-4 ">
+
+                <h5 class="input-head">Image Url:</h5>
+                <input type="text" class="form-control" placeholder="URL" id="image-url" aria-describedby="inputGroupFileAddon03">
+                <h1 class="input-head mt-3">Upper Text :</h1>
+                <div class="input-group mt-4 mb-4">
+
+                    <textarea id="upper-text" placeholder="Enter Your upper Text.." class="form-control" aria-label="With textarea"></textarea>
+                </div>
+
+
+
+
+                <h1 class="input-head mt-3">Lower Text :</h1>
+                <div class="input-group mt-4 mb-4">
+
+                    <textarea id="lower-text" placeholder="Enter Your Lower Text.." class="form-control" aria-label="With textarea"></textarea>
+                </div>
+                <label class="input-head mt-2">Text Color :</label>
+                <input type="color" class="form-control form-control-color input-color" id="Text-color-input" value="#563d7c" title="Choose your color"><br />
+
+
+                <label class="input-head mt-2">Background Color :</label>
+                <input type="color" class="form-control form-control-color input-color" id="Background-color-input" value="#563d7c" title="Choose your color">
+
+
+
+
+
+
+
+
+
+
+            </div>
+
+            <div class="col-12 col-lg-6 d-flex flex-column mt-2 mb-4">
+                <div class="button  text-center mt-2">
+                    <button class="btn btn-warning m-3" id="create" onclick="create()">Create</button>
+
+                </div>
+                <div class="meme-image d-flex flex-column justify-content-center" id="meme-image">
+                    <h1 id="upper-text-display" class="text-display">This is sample upper text </h1>
+                    <img id="image" src="https://img.freepik.com/free-photo/blue-toned-set-paper-sheets-with-copy-space_23-2148320447.jpg" alt="" />
+                    <h1 id="lower-text-display" class="text-display">This is sample lower text </h1>
+
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
